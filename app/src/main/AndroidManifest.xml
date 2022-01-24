@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RACAV10">
         <activity
+            android:name=".act_register"
+            android:exported="false" />
+        <activity
             android:name=".Iniciosesion"
             android:exported="false" />
         <activity android:name=".MainActivity">
