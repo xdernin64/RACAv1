@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RACA V1.0</string>
+    <string name="codigo">CODIGO:</string>
+    <string name="nombres">Nombres</string>
 </resources>

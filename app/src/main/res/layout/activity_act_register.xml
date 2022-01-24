@@ -8,13 +8,14 @@
     tools:context=".act_register">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="341dp"
         android:layout_height="616dp"
-        android:background="#FDFFFFFF"
+        android:background="#E2FFFFFF"
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="50px"
+        android:padding="20dp"
         android:paddingTop="0px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CODIGO:" />
+            android:text="@string/codigo" />
 
         <EditText
             android:id="@+id/txt_cod"
@@ -42,16 +43,34 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombres" />
+            android:text="@string/nombres" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/txt_nombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Ingresar nombres..."
+            android:hintTextColor="#546E7A"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellidos:" />
+
+        <EditText
+            android:id="@+id/txt_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresar aoellidos"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView5"
@@ -71,7 +90,8 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fecha de ingreso" />
+            android:text="Fecha de ingreso"
+            tools:ignore="TextContrastCheck" />
 
         <EditText
             android:id="@+id/date_ingreso"
@@ -122,18 +142,59 @@
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/btn_registro"
-            android:layout_width="138dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10px"
-            android:text="REGISTRAR" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_limpiar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="limpiar" />
+            <Button
+                android:id="@+id/btn_ingresar"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#43A047"
+                android:text="Registrar"
+                tools:ignore="TouchTargetSizeCheck" />
 
+            <Button
+                android:id="@+id/btn_limpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D81B60"
+                android:text="Limpiar"
+                app:iconTint="#00ACC1"
+                app:rippleColor="#00ACC1"
+                app:strokeColor="#00ACC1"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="283dp"
+        android:layout_height="49dp"
+        android:background="#FFB300"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:gravity="center"
+            android:text="REGISTRO DE USUARIOS"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textDirection="firstStrongRtl"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
