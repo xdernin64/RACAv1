@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "RACA V1.0"
